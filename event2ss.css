@@ -85,7 +85,7 @@ nav li:hover {
  
 /*event 1 Background image*/ 
 body {
-    background-image: url("C:/Users/Tharindu Ratnayake/Desktop/WDOS/images/business.jpg");
+    background-image: url("business.jpg");
     background-size: cover; /* Adjust to your preference */
     background-attachment: fixed;
     background-repeat: no-repeat;

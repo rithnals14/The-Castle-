@@ -156,7 +156,7 @@ nav li a:hover{
 body {
   margin: 0;
   padding:0;
-  background-image: url("images/background.jpg");
+  background-image: url("background.jpg");
   background-size: cover; /* Adjust to your preference */
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -168,7 +168,7 @@ body {
     margin: 0;
     padding:0;
     font:small;
-    background-image: url("images/background.jpg");
+    background-image: url("background.jpg");
     background-size: cover; /* Adjust to your preference */
     background-attachment: fixed;
     background-repeat: no-repeat;

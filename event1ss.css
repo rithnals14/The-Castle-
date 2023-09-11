@@ -66,7 +66,7 @@ nav li:hover {
 
 .content{
   color: #ffffff;
-  background-image: url("C:/Users/Tharindu Ratnayake/Desktop/WDOS/images/heart.jpg");
+  background-image: url("heart.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
@@ -106,7 +106,7 @@ nav li:hover {
 
 /*event 1 Background image*/ 
 body {
-    background-image: url("C:/Users/Tharindu Ratnayake/Desktop/WDOS/images/wedding event.jpg");
+    background-image: url("wedding event.jpg");
     background-size: cover; /* Adjust to your preference */
     background-attachment: fixed;
     background-repeat: no-repeat;
