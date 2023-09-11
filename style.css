@@ -1,0 +1,501 @@
+/*COMMON HTML PAGE STYLES*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+/*space on top*/
+.space-top{
+    margin-top:190px;
+  }
+
+  @media(max-width:400px){
+    .space-top{
+      margin-top:300px;
+    }
+  }
+  
+  /*footer style of the html pages*/
+  footer{
+    background-color: rgb(30, 31, 78);
+    color:#ffffff;
+    padding: 5px;
+    height:auto;
+    border-radius:10px;
+    
+  }
+
+  @media(max-width:400px){
+    footer{
+      background-color: rgb(30, 31, 78);
+      color:#ffffff;
+      padding: 5px;
+      width: 600px;
+      height:auto;
+      border-radius:10px;
+      
+    }
+  }
+  
+  /*footer logo styles*/
+  .f-logo{
+    width: 450px;
+    height: 150px;
+    background-color: #ffffff;
+  }
+
+  @media(max-width:400px){
+    .f-logo{
+      width:200px;
+      height: auto;
+      background-color: #ffffff;
+    }
+  }
+  
+  /* style of the main logo on the top*/
+.custom-image{
+  width: 270px;
+  height: 100px;
+}
+
+@media(max-width:400px){
+  .custom-image{
+    width: 250px;
+    height: auto;
+  }  
+}
+
+.align{
+  text-align: right;
+}
+
+@media(max-width:400px){
+  .align{
+    text-align: left;
+    margin-left: 0%;
+  }
+}
+
+/*menu icons alignment*/
+.upper {
+  width: 100%;
+  background-color:transparent;
+    
+}
+
+/*style of the title bar */
+  
+nav{
+  position: fixed;
+  top: 0px;
+  margin-left:0px;
+  width: 100%;
+  height:165px;  
+  background-color:transparent;
+}
+
+
+
+@media(max-width:400px){
+  nav{
+    position: fixed;
+    width: 490px;
+    height: 100px;
+    font-size:x-small;
+  }
+}
+
+ nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family:'Courier New', Courier, monospace;
+ }
+
+ nav li {
+  text-align: right;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:rgba(28, 30, 128, 0.9);
+  color: white;
+  text-decoration: none;
+  border:3px solid rgb(18, 19, 70);
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+ @media(max-width:400px){
+  nav li{
+    width: 110px;
+    text-align: left;
+    display: flex;
+    padding: 10px 20px;
+    background-color:rgba(28, 30, 128, 0.9);
+    color: white;
+    text-decoration: none;
+    border:3px solid rgb(18, 19, 70);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ }
+
+nav li:hover {
+  background-color:rgb(18, 19, 70);
+  
+ }
+
+nav li a:hover{
+  color: rgb(0, 255, 255);
+}
+
+
+   /*Background image*/ 
+body {
+  margin: 0;
+  padding:0;
+  background-image: url("images/background.jpg");
+  background-size: cover; /* Adjust to your preference */
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media(max-width:400px){
+  body {
+    margin: 0;
+    padding:0;
+    font:small;
+    background-image: url("images/background.jpg");
+    background-size: cover; /* Adjust to your preference */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+  
+  /*paragraph style*/
+  p{
+    background-color:transparent;
+    color: #fff;
+    text-align: center;
+   }
+
+  @media(max-width:400px){
+    p{
+      width: 570px;
+    }
+  }
+
+  p a{
+    text-decoration: none;
+    color: rgb(5, 48, 157);
+  }
+
+  p a:hover{
+    color:rgb(0, 255, 255);
+  }
+  
+  /*DIVINDING THE WHOLE PAGE INTO 2 SIDES STYLE*/
+  
+   /* Style for the container holding the two columns */
+  .content{
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  @media(max-width:400px){
+    .content{
+      background-color: transparent;
+      display:block;
+      width: 100%;
+    }
+  }
+  
+   /*left side of the web page*/
+  .left-side{
+    flex:1;
+    background-color:rgba(1, 3, 117, 0.8);
+    color: #ffffff;
+    text-align:center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  @media(max-width:400px){
+    .left-side{
+      width: 600px;
+      background-color:rgba(1, 3, 117, 0.8);
+      color: #ffffff;
+      text-align:center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+  
+  /*text align left*/
+  .l-align{
+    text-align: left;
+    color: rgb(173, 171, 171);
+  }
+  
+  /*right side of the web page*/
+  .right-side{
+    flex: 1;
+    background-color:rgba(170, 170, 170, 0.8);
+    color: black;
+    text-align:center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  @media(max-width:400px){
+    .right-side{
+      width: 600px;
+      background-color:rgba(170, 170, 170, 0.8);
+      color: black;
+      text-align:center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+
+  .a-right-side{
+    flex: 1;
+    background-color:rgba(170, 170, 170, 0.8);
+    color: black;
+    text-align:center;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  @media(max-width:400px){
+    .a-right-side{
+      height: 300px;
+      width: 600px;
+      flex: 1;
+      background-color:rgba(170, 170, 170, 0.8);
+      color: black;
+      text-align:center;
+      border-radius: 10px;
+      padding: 20px;
+    }
+  }
+  
+  /*to leave a space between menu bar home page content*/
+  .space{
+    margin-top: 670px;
+   }
+
+  @media(max-width:400px){
+    .space{
+      margin-top: 1190px;
+    }
+  }
+
+   /*HOME PAGE STYLES*/
+
+  /*home page map style*/
+  .map{
+    width: 400px;
+    height: auto;
+  }
+  
+  
+
+  /*BRANCHES PAGE STYLES*/
+
+
+  .branch{
+    background-color: #07013c;
+    color: #000000;
+    border: 3px solid rgb(0, 255, 255);
+    border-radius: 50px;
+  }
+
+  @media(max-width:400px){
+    .branch{
+      width: 600px;
+      background-color: #07013c;
+      color: #000000;
+      border: 3px solid rgb(0, 255, 255);
+      border-radius: 50px;
+    }
+  }
+
+  table{
+    border: 3px solid rgb(206, 205, 205);
+    border-radius: 10px;
+    width: 100%;
+    height:200px;
+  }
+
+  table th{
+    background-color:rgb(75, 74, 74);
+  }
+
+  table td{
+    text-align: center;
+    background-color: #ffffff;
+  }
+  
+   /*Branches and adventures page headings */
+  .para-heading{
+    background-color:#07013c;
+    color:rgb(0, 234, 255);
+    text-align: center;
+  }
+
+  @media(max-width:400px){
+    .para-heading{
+      background-color:#07013c;
+      color:rgb(0, 234, 255);
+      text-align: center;
+      width: 600px;
+    }
+  }
+  
+   /*Headings*/
+  .heading{
+    text-align: center;
+    border: 3px solid rgb(229, 206, 77);
+    color:#07013c;
+    background-color:rgba(212, 175, 55,0.9);
+    height:100px;
+    padding:30px;
+    border-radius: 10px;
+   }
+
+  @media(max-width:400px){
+    .heading{
+      font-size: small;
+      text-align: center;
+      width: 600px;
+      border: 3px solid rgb(229, 206, 77);
+      color:#07013c;
+      background-color:rgba(212, 175, 55,0.9);
+      height:100px;
+      padding:30px;
+      border-radius: 10px;
+    }
+  }
+  
+  
+  /*ADVENTURE PAGE STYLES*/
+  
+  /*adventure page images style*/
+  .adv-l{
+    width: 300px;
+    height: 200px;
+    float: left;
+  }
+
+  @media(max-width:400px){
+    .adv-l{
+      width: 200px;
+      height: 100px;
+      float: left;
+    }
+  }
+   
+  .adv-r{
+    width: 300px;
+    height: 200px;
+    float: right;
+  }
+
+  @media(max-width:400px){
+    .adv-r{
+      width: 200px;
+      height: 100px;
+      float: right;
+    }
+  }
+  
+  
+  
+  
+   /*RESTAURANT PAGE STYLES*/
+  
+   /*restuarant page space on top between menu and the content*/
+  .r-space-top{
+    margin-top:250px;
+  }
+  
+  /*restuarant page image style*/
+  .rest-l{
+    width: 200px;
+    height: 100px;
+    float: right;
+    margin-right: 10px;
+  }
+  
+  .rest-r{
+    width: 200px;
+    height: 100px;
+    float: right;
+  }
+  
+  /*space between two paragraphs*/
+  .r-space{
+    margin-top: 330px;
+  }
+  
+  .r-upper {
+    text-align: right; /* Align text and inline elements to the right */
+    margin-right:85px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .r-l-align{
+    color: #000000;
+    text-align: left;
+  }
+
+
+
+  /*FORM STYLES*/
+  
+  label {
+    display: inline-block;
+    width: 150px; /* Set a consistent width for labels */
+    text-align:right; /* Align labels to the right */
+    margin-right: 10px; /* Add a little space between label and input */
+  }
+  
+  input {
+    display: inline-block;
+    width: 150px; /* Adjust input width as needed */
+    padding: 5px;
+    margin-bottom: 10px; /* Add vertical spacing between inputs */
+  }
+  
+  
+  
+  /*BOOKING PAGE STYLES*/
+  
+  /*submit button style*/
+  .submit{
+    background-color:transparent;
+  }
+  
+  /*select option style*/
+  .select{
+    border: 5px;
+    padding: 10px 20px;
+    background-color:rgb(20, 21, 97);
+    color:#ffffff;
+  }
+  
+  /*small payment logo styles */
+  .b-image{
+    width:30px;
+    height:15px;
+  }
+  
+  

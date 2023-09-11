@@ -1,0 +1,99 @@
+/*footer style of the html pages*/
+footer{
+    background-color:#3b1e08;
+    color: white;
+    padding: 5px;
+  }
+
+/*footer logo*/
+.f-logo{
+    width:400px ;
+    height:150px;
+  }
+
+/*spacing*/
+.space{
+  margin-top: 700px;
+}
+
+.heading{
+  text-align: center;
+  border: 3px solid rgb(245, 202, 34) ;
+  color:rgb(212, 175, 55);
+  background-color:#ffffff;
+  height:50;
+  padding:30px;
+  border-radius: 10px;
+}
+
+
+/*style of the title bar */
+nav {
+  position: fixed;
+  top: 0px;
+  margin-left:0px;
+  width: 100%;
+  height:165px;  
+  border: 3px solid #9a7b4f;
+  border-radius: 10px;
+  background-color:rgba(59, 30, 8,0.6);
+    
+ }
+
+ nav a {
+  text-decoration: none;
+  color: #ffffff;
+ }
+
+ nav li {
+  text-align: right;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color:#65350f;
+  color: white;
+  text-decoration: none;
+  border:3px solid #9a7b4f;
+  border-radius: 5px;
+  cursor: pointer;
+ }
+
+nav li:hover {
+  background-color:#80471c;
+ }
+
+
+
+ /* style of the logo */
+.custom-image{
+    width: 270px;
+    height: 100px;
+    }
+
+/*menu bar position*/
+.upper {
+    text-align:center; /* Align text and inline elements to the right */
+    font-family: Arial, sans-serif;
+}
+
+/*event bar style*/
+.event-upper{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+   }
+
+ 
+/*event 1 Background image*/ 
+body {
+    background-image: url("C:/Users/Tharindu Ratnayake/Desktop/WDOS/images/business.jpg");
+    background-size: cover; /* Adjust to your preference */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+/*paragraph style*/
+P{
+    text-align: center;
+}
+
