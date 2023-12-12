@@ -1,12 +1,15 @@
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Booking page</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
     <nav>
-        <img src="main logo.png" class="custom-image">
+        <img src="images/mainLogo.png" class="custom-image">
         <div class="align">
             <ul class="upper">
                 <li><a href="index.html">Home</a></li>
@@ -16,125 +19,116 @@
                 <li><a href="booking.html">Booking</a></li>
             </ul>
         </div>
-            
+
     </nav>
     <div class="space-top">
-    <body>
+
         <div class="heading">
-            <center><h1><b>BOOKING DETAILS</b></h1></center>
+            <center>
+                <h1><b>BOOKING DETAILS</b></h1>
+            </center>
         </div>
         <div class="content">
             <div class="left-side">
-                <form>
+                <form id="bookingForm" method="post">
                     <h2>HOTEL BOOKING</h2>
                     <h3>Personal information</h3>
                     <br>
                     <br>
-                    
-                    <label for="f-name">First name:</label><input type="text" name="f-name" required="required">
+
+                    <label for="roomType">Room Type:</label>
+                    <select id="roomType">
+                        <option value="Single">Single</option>
+                        <option value="Double">Double</option>
+                        <option value="Triple">Triple</option>
+                    </select>
                     <br>
                     <br>
-                    
-                    <label for="l-name">Last name:</label><input type="text" name="l-name" required="required">
+
+                    <label for="numberOfRooms">Number of Rooms:</label>
+                    <input type="number" id="numberOfRooms" min="1">
                     <br>
                     <br>
-                    
-                    <label for="number">Contact number:</label><input type="text" name="number" required="required">
+
+                    <label for="checkIn">Check-in Date:</label>
+                    <input type="date" id="checkIn">
                     <br>
                     <br>
-                    
-                    <label for="mail">Email:</label><input type="text" name="mail" required="required">
+
+                    <label for="checkOut">Check-out Date:</label>
+                    <input type="date" id="checkOut">
                     <br>
                     <br>
+
+                    <label for="numberOfAdults">Number of Adults:</label>
+                    <input type="number" id="numberOfAdults" min="1">
                     <br>
                     <br>
-                    <h3>Hotel information</h3>
-                    <br>
-                    
-                    <label for="b-name">Branch name:</label><input type="text" name="b-name" required="required">
-                    <br>
-                    <br>
-                    <label>
-                        Type of room:
-                        <SELECT name=“list”  size=3 class="select">
-                        <option> Golden suite</option>
-                        <option> Silver suite</option>
-                        <option> Family suite</option>
-                        </SELECT> 
-                    </label>
+
+                    <label for="numberOfChildren">Number of Children:</label>
+                    <input type="number" id="numberOfChildren" min="0">
                     <br>
                     <br>
-                    
-                    <img src="visa.png" class="b-image">
-                    <img src="mastercard.png" class="b-image">
-                    <img src="americanexpress.png" class="b-image">
-                    
-                    <label>
-                        Payment method:
-                        <SELECT name=“payment”  size=3 class="select">
-                        <option>Visa</option>
-                        <option>Master card</option>
-                        <option>American express</option>
-                        </SELECT> 
-                    </label>
+
+                    <label for="timeDuration">Time Duration:</label>
+                    <select id="timeDuration">
+                        <option value="1">1 day</option>
+                        <option value="2">2 days</option>
+                        <option value="3">3 days</option>
+                        <option value="4">4 days</option>
+                        <option value="5">5 days</option>
+                        <option value="6">6 days</option>
+                        <option value="7">7 days</option>
+                    </select>
                     <br>
                     <br>
-                    <div class="submit">
-                        <input type="submit" value="Submit">
-                    </div>
-                
+
+                    <label>Extra Requirements:</label>
+                    <input type="checkbox" id="wifi" name="wifi" value="WiFi">WiFi
+                    <input type="checkbox" id="poolView" name="poolView" value="Pool View">Pool View
+                    <input type="checkbox" id="gardenView" name="gardenView" value="Garden View">Garden View
+                    <br>
+                    <br>
+
+                    <input type="text" id="promoCode" placeholder="Promo Code">
+                    <button type="submit" id="bookBtn">Book Now</button>
+                    <button type="button" id="currentBookingResetBtn">Reset Current Booking</button>
+                    <br><br>
+
+                    <button type="button" id="checkLoyaltyBtn">Check Loyalty Points</button>
+                    <br>
+                    <br>
+
+
                 </form>
-            </div>
-            <div class="right-side">
-                <form>
-                    <h2>ADVENTURE BOOKING</h2>
-                    <h3>Personal information</h3>
-                    <br>
-                    <br>
-                    <label for="f-name">First name:</label><input type="text" name="f-name" required="required">
-                    <br>
-                    <br>
-                    <label for="l-name">Last name:</label><input type="text" name="l-name" required="required">
-                    <br>
-                    <br>
-                    <label for="number">Contact number:</label><input type="text" name="number" required="required">
-                    <br>
-                    <br>
-                    <label for="mail">Email:</label><input type="text" name="mail" required="required">
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h3>Adventure information</h3>
-                    <label for="a-name">Adventure name:</label><input type="text" name="a-name" required="required">
-                    <br>
-                    <br>
-                    
-                    <img src="visa.png" class="b-image">
-                    <img src="mastercard.png" class="b-image">
-                    <img src="americanexpress.png" class="b-image">
-                    
-                    <label>
-                        Payment method:
-                        <SELECT name=“payment”  size=3 class="select">
-                        <option>Visa</option>
-                        <option>Master card</option>
-                        <option>American express</option>
-                        </SELECT> 
-                    </label>
-                    <br>
-                    <br>
+
+                <!-- Show Loyalty Points -->
+                <h1>Loyalty Points:</h1>
+                <div id="loyaltyPoints"></div>
+
+                <!-- Current Booking Details -->
+                <h1>Current Booking Details:</h1>
+                <div id="bookingDetails"></div>
+                <button type="button" id="addToFavoriteBtn">Add to Favorites</button>
+
+                <!-- Cost of the Current Booking -->
+                <h1>Cost of the Current Booking:</h1>
+                <div id="currentBookingPrice"></div>
+
+                <!-- Overall Booking -->
+                <h1>Overall Booking:</h1>
+                <div id="overallBooking"></div>
+
+                <!-- Overall Booking Price -->
+                <h1>Overall Booking Price:</h1>
+                <div id="overallBookingPrice"></div>
                 
-                    <div class="submit"> <input type="submit" value="Submit"></div>
-                
-                </form>
             </div>
+
+
+
         </div>
-                
 
-                
-
-    </body>
     </div>
     <br>
     <br>
@@ -142,7 +136,11 @@
     <footer>
         <img src="caslte logo.png" class="f-logo"><br><br>
         Contact us:<br>
-        Whatsapp  : +940777201570<br>
+        Whatsapp : +940777201570<br>
         Telephone : +941155522233<br>
     </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
