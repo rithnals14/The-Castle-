@@ -38,15 +38,15 @@
 
                     <label for="roomType">Room Type:</label>
                     <select id="roomType">
-                        <option value="Single">Single</option>
-                        <option value="Double">Double</option>
-                        <option value="Triple">Triple</option>
+                        <option value="Single">Single (1 Bed)</option>
+                        <option value="Double">Double (2 Beds)</option>
+                        <option value="Triple">Triple (3 Beds)</option>
                     </select>
                     <br>
                     <br>
 
-                    <label for="numberOfRooms">Number of Rooms:</label>
-                    <input type="number" id="numberOfRooms" min="1">
+                    <label for="numberOfBeds">Number of Extra Beds:</label>
+                    <input type="number" id="numberOfBeds" min="1">
                     <br>
                     <br>
 
@@ -65,7 +65,7 @@
                     <br>
                     <br>
 
-                    <label for="numberOfChildren">Number of Children:</label>
+                    <label for="numberOfChildren">Number of Children (Kids above 5 years):</label>
                     <input type="number" id="numberOfChildren" min="0">
                     <br>
                     <br>
@@ -112,9 +112,7 @@
                 <button type="button" id="addToFavoriteBtn">Add to Favorites</button>
 
                 <!-- Cost of the Current Booking -->
-                <h1>Cost of the Current Booking:</h1>
-                <div id="currentBookingPrice"></div>
-
+                
                 <!-- Overall Booking -->
                 <h1>Overall Booking:</h1>
                 <div id="overallBooking"></div>
@@ -140,7 +138,7 @@
         Telephone : +941155522233<br>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="Bookingscript.js"></script>
 </body>
 
 </html>
