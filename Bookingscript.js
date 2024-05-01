@@ -48,25 +48,6 @@ if (gardenView.checked) {
 }
 
 
-// Calculate The Booking Price
-// const singleRoomValue = 25000;
-// const doubleRoomValue = 35000;
-// const tripleRoomValue = 40000;
-// if (roomType.value == "Single") {
-// 	roomValue = singleRoomValue;
-// } else if (roomType.value == "Double") {
-// 	roomValue = doubleRoomValue;
-// } else if (roomType.value == "Triple") {
-// 	roomValue = tripleRoomValue;
-// }
-// currentBookingPrice = roomValue*numberOfBeds.value*timeDuration.value;
-// overallBookingPrice += currentBookingPrice;
-
-// if (promoCode.value == "Promo123") {
-// 	currentBookingPrice = 0.95*currentBookingPrice;
-// } else {
-// 	currentBookingPrice = currentBookingPrice;
-// }
 
 
 bookingForm.addEventListener("submit", function (event) {
@@ -146,4 +127,5 @@ addToFavBtn.addEventListener("click", function () {
 	overallBookingDiv.innerHTML += bookingDetailsDiv.innerHTML;
 	localStorage.setItem("overallBookingDiv", overallBookingDiv.innerHTML);
 	localStorage.setItem("overallBookingPrice", overallBookingPrice += currentBookingPrice);
+	alert("adder to favorites")
 });
